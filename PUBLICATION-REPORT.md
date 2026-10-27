@@ -108,8 +108,16 @@ detectable. The preview does not implement curator, hooks or semantic search.
 
 ## Publication state
 
-Prepared for the authorized initial public commit after successful checks.
-The exact commit SHA is obtained after commit and reported in the delivery
-response; a commit cannot embed its own hash without changing it. Remote commit
-and full tree identity are verified after push. No npm publication, tag, GitHub
-release, force push, agent benchmark or subsequent experiment is authorized here.
+The public repository was created and the initial preview was pushed successfully
+to `main`, using an ordinary push and the expected `origin`.
+
+- URL: https://github.com/FrancescoFontanesi/knownex
+- Initial publication commit: `3e9b240d7ca39de16472406698bd445a8eff8f64`
+- Message: `feat: initial public preview of KnowNex`
+- A following documentation-only commit records this publication receipt.
+  Its SHA is reported in the final delivery because a commit cannot embed its
+  own hash. The final remote head and full tree are checked against local Git
+  after that push.
+
+The public tree contains the 37 reviewed files. No npm publication, tag, GitHub
+release, force push, agent benchmark or subsequent experiment is performed.
