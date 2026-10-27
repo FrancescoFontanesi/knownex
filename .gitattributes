@@ -1,0 +1,4 @@
+# Preserve exact bytes in Markdown checkpoints across operating systems.
+* text=auto eol=lf
+# Generated snapshots keep canonical blank lines, including empty relation lists.
+examples/basic/memory/** whitespace=-blank-at-eof

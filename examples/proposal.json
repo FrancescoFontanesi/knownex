@@ -1,0 +1,33 @@
+{
+  "expected_revision": 0,
+  "message": "Recorded local-only scope and the next verification task.",
+  "reason": "Documentation checks must work offline.",
+  "operations": [
+    {
+      "type": "set_state",
+      "domains": ["documentation"],
+      "focus_domain": "documentation",
+      "content": "# Documentation Project\n\n## Objective\n\nKeep local documentation links valid without network access.\n\n## Current status\n\nThe local-only scope is agreed. Verification is the next action.\n\n## Focus\n\nLocal link verification.\n\n## Decisions and constraints\n\nDo not fetch remote URLs or introduce external dependencies.\n\n## Open issues\n\nVerification has not been completed.\n\n## Next actions\n\nVerify local file links before release.\n\n## References\n\n- [Local-only scope](knowledge/DEC-LOCAL.md)\n- [Verification task](knowledge/TASK-CHECK.md)\n"
+    },
+    {
+      "type": "upsert_node",
+      "id": "DEC-LOCAL",
+      "kind": "decision",
+      "domain": "documentation",
+      "title": "Keep link verification local-only",
+      "summary": "Check local filesystem destinations without fetching remote URLs. Keep the implementation dependency-free so checks can run offline.",
+      "lifecycle": "active",
+      "relations": [{ "type": "relevant_to", "target": "TASK-CHECK" }]
+    },
+    {
+      "type": "upsert_node",
+      "id": "TASK-CHECK",
+      "kind": "task",
+      "domain": "documentation",
+      "title": "Verify local links before release",
+      "summary": "Verify local file links while preserving the local-only scope. This task is pending; no successful result is claimed.",
+      "lifecycle": "active",
+      "relations": []
+    }
+  ]
+}

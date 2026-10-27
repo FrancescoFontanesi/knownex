@@ -1,0 +1,37 @@
+# Local experiments: pilots, demos, fixtures, logs and evaluation reports
+/experiments/
+
+# Generated project memory
+/memory/
+
+# Local agent configuration and regenerable code graph
+/.codex/
+/opencode.json
+/graft/
+
+# Workstation instructions and local publication/experiment reports
+/AGENTS.md
+/.ignore
+/.publication/
+/ARCHITECTURAL-REFACTOR-REPORT.md
+
+# Backups and interrupted migrations of the local project memory
+/memory.v2-backup-*/
+/.memory-migration-*/
+
+# Dependencies
+node_modules/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+
+# OS and editor artifacts
+.DS_Store
+Thumbs.db

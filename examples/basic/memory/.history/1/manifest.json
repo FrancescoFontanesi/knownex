@@ -1,0 +1,28 @@
+{
+  "revision": 1,
+  "state_hash": "8327c43298c45993ffeaddf6dcf68e6ff4304120130182c5f53dc5bf0660b59b",
+  "nodes": {
+    "DEC-LOCAL": {
+      "meta": {
+        "version": 1,
+        "id": "DEC-LOCAL",
+        "kind": "decision",
+        "domain": "documentation",
+        "title": "Keep link verification local-only",
+        "lifecycle": "active"
+      },
+      "hash": "33bbe457148d8e31ca0b5d2d25989fc3cdeda2f25ada6f226a0dc61fa35825ac"
+    },
+    "TASK-CHECK": {
+      "meta": {
+        "version": 1,
+        "id": "TASK-CHECK",
+        "kind": "task",
+        "domain": "documentation",
+        "title": "Verify local links before release",
+        "lifecycle": "active"
+      },
+      "hash": "042fdf9295407af85b0d43a9db86b00beec54724c6b1ff6c558a31a4086c8b14"
+    }
+  }
+}
